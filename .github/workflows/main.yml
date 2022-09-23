@@ -36,5 +36,8 @@ jobs:
           echo test, and deploy your project.
       - name: actionshub-chef-install
         uses: actionshub/chef-install@2.0.3
+        
+     - name: chef version
+       run: sudo chef --version
       
           
