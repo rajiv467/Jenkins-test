@@ -37,7 +37,9 @@ jobs:
       - name: actionshub-chef-install
         uses: actionshub/chef-install@2.0.3
         
-#     - name: chef version
-#       run: inspec exec package.rb -t ssh://ec2-user@3.83.202.30
+#     - name: Test
+#       run: |
+          inspec shell -t ssh://ec2-user@3.83.202.30
+          inspec exec package.rb -t ssh://ec2-user@3.83.202.30
       
           
